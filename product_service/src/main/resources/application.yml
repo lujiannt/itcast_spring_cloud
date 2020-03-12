@@ -1,0 +1,12 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: produce_service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/,http://localhost:9000/eureka/ #注册到多个eureka
+  instance:
+    prefer-ip-address: true
+
