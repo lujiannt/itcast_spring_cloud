@@ -7,6 +7,6 @@ import org.springframework.stereotype.Service;
 public class ProductServiceImpl implements ProductService {
     @Override
     public String getProductMsg() {
-        return "product msg : No.1";
+        return "product000 msg : No.1";
     }
 }

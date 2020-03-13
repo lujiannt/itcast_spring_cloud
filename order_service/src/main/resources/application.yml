@@ -2,7 +2,7 @@ server:
   port: 9001
 spring:
   application:
-    name: order_service
+    name: order-service
 eureka:
   client:
     serviceUrl:

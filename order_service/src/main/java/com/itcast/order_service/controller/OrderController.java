@@ -21,10 +21,12 @@ public class OrderController {
     @RequestMapping("/product")
     @ResponseBody
     public String getProductMsg() {
-        List<ServiceInstance> instances = discoveryClient.getInstances("produce_service");
-        String host = "http://"+instances.get(0).getHost()+":"+instances.get(0).getPort();
-        System.out.println("host = " + host);
-        String result = restTemplate.getForObject(host+"/product/get", String.class);
+        //未启用ribbon负载均衡
+//        List<ServiceInstance> instances = discoveryClient.getInstances("produce_service");
+//        String host = "http://"+instances.get(0).getHost()+":"+instances.get(0).getPort()+"/product/get";
+
+        //启用ribbon负载均衡
+        String result = restTemplate.getForObject("http://product-service/product/get", String.class);
         return result;
     }
 }

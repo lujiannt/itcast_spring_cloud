@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka_server" />
-        <module name="eureka_server_back" />
+        <module name="product1_service" />
         <module name="springCloudStudy" />
+        <module name="eureka_server_back" />
         <module name="product_service" />
         <module name="order_service" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="eureka_server" options="-parameters" />
       <module name="eureka_server_back" options="-parameters" />
       <module name="order_service" options="-parameters" />
+      <module name="product1_service" options="-parameters" />
       <module name="product_service" options="-parameters" />
       <module name="springCloudStudy" options="-parameters" />
     </option>
